@@ -1,6 +1,6 @@
 # login_screen
 
-A new Flutter project.
+Basic açılış animasyonlu Login Screen
 
 ## Getting Started
 
