@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:login_screen/core/buttons/custom_icon_button.dart';
+import 'package:login_screen/core/components/buttons/custom_icon_button.dart';
 import 'package:login_screen/core/provider/theme_provider/theme_provider.dart';
 import 'package:login_screen/theme/theme.dart';
 import 'package:provider/provider.dart';

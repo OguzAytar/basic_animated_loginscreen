@@ -2,12 +2,14 @@
 
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
-import 'package:login_screen/core/buttons/custom_buttons.dart';
+import 'package:login_screen/core/components/buttons/custom_buttons.dart';
 import 'package:login_screen/theme/theme.dart';
+import 'package:login_screen/view/register/register.dart';
 import 'package:login_screen/widget/buttons/elevatedbutton/black_buttons.dart';
 import 'package:login_screen/widget/buttons/elevatedbutton/blue_buttons.dart';
-import 'package:login_screen/widget/buttons/iconbutton/switchbuttons.dart';
+import 'package:login_screen/widget/buttons/iconbutton/theme_switch_buttons.dart';
 import 'package:login_screen/widget/buttons/textbutton/transparent_text_button.dart';
+import 'package:login_screen/widget/textfield/custom_text_field.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -97,29 +99,15 @@ class LoginScreen extends StatelessWidget {
                           ],
                           borderRadius:
                               const BorderRadius.all(Radius.circular(10))),
-                      child: Column(children: [
-                        Container(
-                            margin: const EdgeInsets.all(15),
-                            child: TextField(
-                              style: TextStyle(color: tema.colorScheme.surface),
-                              decoration: InputDecoration(
-                                  hintText: 'Email veya Telefon Numarası',
-                                  hintStyle: TextStyle(
-                                      color: tema.colorScheme.onSurface),
-                                  border: InputBorder.none),
-                            )),
-                        const Divider(),
-                        Container(
-                            margin: const EdgeInsets.all(10),
-                            child: TextField(
-                              style: TextStyle(color: tema.colorScheme.surface),
-                              decoration: InputDecoration(
-                                  hintText: 'Şifre',
-                                  hintStyle: TextStyle(
-                                      color: tema.colorScheme.onSurface),
-                                  border: InputBorder.none),
-                              obscureText: true,
-                            )),
+                      child: const Column(children: [
+                        CustomInputTextField(
+                          text: 'Eposta ya da Telefon no',
+                        ),
+                        Divider(),
+                        CustomInputTextField(
+                          text: 'Şifre',
+                          obscureText: true,
+                        )
                       ]),
                     ),
                     Expanded(
@@ -131,7 +119,14 @@ class LoginScreen extends StatelessWidget {
                           children: [
                             TransparentTextButton(
                               text: 'Kayıtlı değil Misin? \n Hemen Kaydol',
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const RegisterScreen(),
+                                    ));
+                              },
                             ),
                             TransparentTextButton(
                               text: 'Şifreni mi unuttun',

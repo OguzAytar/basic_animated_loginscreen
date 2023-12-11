@@ -49,17 +49,18 @@ class Temalar {
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
           backgroundColor: backgroundColor, foregroundColor: Colors.white),
       colorScheme: const ColorScheme(
-          brightness: Brightness.light,
-          primary: Colors.black,
-          onPrimary: Color(0xff0093c71),
-          secondary: Color(0xff0093c71),
-          onSecondary: Color(0xff0093c71),
-          error: Colors.red,
-          onError: Colors.red,
-          background: Colors.white,
-          onBackground: Colors.black,
-          surface: Colors.black,
-          onSurface: Color.fromARGB(172, 56, 54, 54)));
+        brightness: Brightness.light,
+        primary: Colors.black,
+        onPrimary: Color(0xff0093c71),
+        secondary: Color(0xff0093c71),
+        onSecondary: Color(0xff0093c71),
+        error: Colors.red,
+        onError: Colors.red,
+        background: Colors.white,
+        onBackground: Colors.black,
+        surface: Colors.black,
+        onSurface: Color.fromARGB(172, 56, 54, 54),
+      ));
 
   //*                       karanlık tema ayarları
 

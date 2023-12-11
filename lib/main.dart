@@ -1,6 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:login_screen/core/provider/theme_provider/theme_provider.dart';
+import 'package:login_screen/view/register/register.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:login_screen/theme/theme.dart';

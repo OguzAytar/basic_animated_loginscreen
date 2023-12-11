@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
-import 'package:login_screen/core/buttons/custom_buttons.dart';
+import 'package:login_screen/core/components/buttons/custom_buttons.dart';
 
 class CustomBlueButton extends StatelessWidget {
   const CustomBlueButton({
